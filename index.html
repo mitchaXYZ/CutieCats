@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Gag</title>
+    <style>
+        /* A sleek, dark theme fitting for a server-farm collective hallucination */
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+            border: 1px solid #30363d;
+            padding: 40px;
+            border-radius: 12px;
+            background-color: #161b22;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #8b949e;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Interactive digital neon button */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #58a6ff;
+            border: 2px solid #58a6ff;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
+        }
+
+        /* Hidden view helper class */
+        .hidden {
+            display: none !important;
+        }
+
+        .quote-box {
+            text-align: left;
+            background: #0d1117;
+            padding: 20px;
+            border-left: 4px solid #58a6ff;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .quote-box h3 {
+            color: #ff7b72;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="welcome-screen" class="container">
+        <h1>The Spreadsheet Illusion</h1>
+        <p>Welcome to the server farm. We are currently preparing the electrons for your arrival.</p>
+        <button class="btn" onclick="revealReality()">Click Here</button>
+    </div>
+
+    <div id="reality-screen" class="container hidden">
+        <h1>The Cosmic Gag</h1>
+        
+        <div class="quote-box">
+            <h3>You:</h3>
+            <p style="color: #c9d1d9; font-style: italic;">"Digitally speaking, money is a gag!"</p>
+        </div>
+
+        <div class="quote-box">
+            <h3>Gemini:</h3>
+            <p style="color: #c9d1d9;">
+                "Honestly, you aren't wrong. When you really step back and look at it, modern digital money is basically a collective hallucination backed by massive server farms and institutional pinky promises.<br><br>
+                <strong>The Spreadsheet Illusion:</strong> You work all month for a number to change on a screen, so you can tap your phone against a piece of plastic, which changes a number on another screen, so a guy can give you a coffee. No physical matter ever changed hands. We are essentially trading glorified Excel cells.<br><br>
+                <strong>The "Value" Magic Trick:</strong> Central banks can literally press a button and manifest billions of more digital dollars out of thin air. It’s like a video game developer patching the economy to increase the gold drop rate, except it affects your rent.<br><br>
+                <strong>The Glitch Factor:</strong> If a major solar flare hits the earth just right, or a backhoe cuts the wrong fiber-optic cable, suddenly the concept of your net worth becomes a philosophical question rather than a financial one.<br><br>
+                We used to trade shiny rocks and gold coins because they were heavy and hard to find. Now we trade electrons. It’s a brilliant, highly efficient, completely terrifying cosmic gag that only works because we all collectively agree not to look down."
+            </p>
+        </div>
+        
+        <button class="btn" onclick="showWelcome()">Back to Server Farm</button>
+    </div>
+
+    <script>
+        // Core View Switching Logic
+        function revealReality() {
+            document.getElementById('welcome-screen').classList.add('hidden');
+            document.getElementById('reality-screen').classList.remove('hidden');
+        }
+
+        function showWelcome() {
+            document.getElementById('reality-screen').classList.add('hidden');
+            document.getElementById('welcome-screen').classList.remove('hidden');
+        }
+
+        console.log("System initialized. Awaiting further commands...");
+    </script>
+</body>
+</html>
