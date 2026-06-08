@@ -125,7 +125,21 @@
             document.getElementById('reality-screen').classList.add('hidden');
             document.getElementById('welcome-screen').classList.remove('hidden');
         }
-
+        function toggleMusic() {
+            const music = document.getElementById('bg-music');
+            const button = document.getElementById('music-toggle');
+            
+            if (music.paused) {
+                music.play().then(() => {
+                    button.innerHTML = "⏸️ Pause Music";
+                }).catch(error => {
+                    console.log("Audio playback failed. Modern browsers require user interaction first:", error);
+                });
+            } else {
+                music.pause();
+                button.innerHTML = "🎵 Play Music";
+            }
+        }
         console.log("System initialized. Awaiting further commands...");
     </script>
     <audio id="bg-music" loop>
